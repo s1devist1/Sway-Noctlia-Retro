@@ -3,7 +3,8 @@
 This is my personal Sway rice (dotfiles). It contains my Sway config, Noctalia shell settings, Kitty and Alacritty terminal configs, Fish shell and Starship prompt setup, Fastfetch, and a collection of wallpapers. If you want to use any of it, just copy the files you like.
 ## Screenshots
 
-<!-- Add your screenshots here -->
+![Desktop](Screenshots/show1.png)
+
 
 ## What's included?
 
@@ -62,7 +63,7 @@ Browse the [official plugins](https://github.com/noctalia-dev/official-plugins) 
 
 The plugin settings are stored in `local/state/noctalia/settings.toml` in this repo. Copy it to `~/.local/state/noctalia/settings.toml` if you want to use my setup. Noctalia should load the settings and fetch the listed plugins from their configured sources. You may need to restart Noctalia or log out and back in for everything to load.
 
-**Note:** This settings file also contains personal layout choices and local file paths. Check them before using it on another machine.
+**Note:** This settings file also contains personal layout choices and local file paths. Check them before using it on another machine. For example, check the paths for where screenshots are stored and where Noctalia picks wallpapers from.
 
 ## Keybinds
 
@@ -98,7 +99,6 @@ These are the main binds from my current Sway config. Check `config/sway/config`
 
 ## Notes
 
-- This setup is made for **Sway + Noctalia**.
 - Dependencies are not included. Install the apps and tools you need yourself.
 - Some paths, commands, wallpapers and app names are specific to my system.
 - Feel free to change anything to suit your own setup.
