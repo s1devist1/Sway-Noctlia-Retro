@@ -14,6 +14,7 @@ This is my personal Sway rice (dotfiles). It contains my Sway config, Noctalia s
 - **Fish & Starship** — shell and prompt setup.
 - **Fastfetch** — system info and custom themes.
 - **Wallpapers** — Catppuccin, Dracula, Gruvbox, Rosé Pine and Tokyo Night.
+- **Fonts** — Maple Mono for the terminal and Google Sans Flex for the system UI. (Not included)
 
 ## Setup notes
 
@@ -41,7 +42,7 @@ The Fish and Starship configs change the look of your terminal prompt, including
 
 I use Noctalia's theme system to manage colors across the shell and supported apps.
 
-For theming and app templates, check the [Noctalia theming docs](https://docs.noctalia.dev/noctalia/theming/).
+For theming and app templates, check the [Noctalia theming docs](https://docs.noctalia.dev/noctalia/templates/official/gtk-qt/) 
 
 You can change the palette, theme mode and wallpaper settings to fit your own taste.
 
@@ -102,6 +103,7 @@ These are the main binds from my current Sway config. Check `config/sway/config`
 - Dependencies are not included. Install the apps and tools you need yourself.
 - Some paths, commands, wallpapers and app names are specific to my system.
 - Feel free to change anything to suit your own setup.
+-
 
 Have fun with it!
 
