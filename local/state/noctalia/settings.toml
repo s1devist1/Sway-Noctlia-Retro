@@ -1,0 +1,753 @@
+config_version = 15
+
+[accessibility]
+ui_scale = 1.1000000089406967
+
+[audio]
+sound_volume = 0.99999997764825821
+
+[bar]
+order = [ "swaybar" ]
+
+    [bar.swaybar]
+    background_opacity = 0.0
+    border = "primary"
+    capsule = true
+    capsule_border = "primary"
+    capsule_padding = 7.0
+    capsule_radius = 0
+    capsule_thickness = 0.99999998137354851
+    center = [ "group:g6", "group:g2", "group:g5" ]
+    end = [ "tray", "group:g4", "group:g1", "group:g3" ]
+    margin_edge = 9
+    margin_ends = 0
+    radius = 0
+    scale = 1.1000000089406967
+    shadow = false
+    start = [ "taskbar", "sway-mode" ]
+    thickness = 38
+
+        [bar.swaybar.dead_zone.actions]
+        left = "screenshot-region"
+        middle = "annotate"
+        scroll_left = "window-switcher"
+
+        [[bar.swaybar.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = "primary"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_variant"
+        id = "g1"
+        members = [ "notifications", "clipboard", "network", "bluetooth", "volume", "brightness", "settings" ]
+        opacity = 1.0
+        padding = 7.0
+        radius = 0.0
+
+        [[bar.swaybar.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = "primary"
+        border_width = 1.5
+        enabled = true
+        fill = "surface_variant"
+        id = "g2"
+        members = [ "control-center", "clock", "date", "privacy" ]
+        opacity = 1.0
+        padding = 4.0
+
+        [[bar.swaybar.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = "primary"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_variant"
+        id = "g3"
+        members = [ "battery", "session" ]
+        opacity = 1.0
+        padding = 7.0
+        radius = 0.0
+
+        [[bar.swaybar.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = "primary"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_variant"
+        id = "g4"
+        members = [ "media" ]
+        opacity = 1.0
+        padding = 7.0
+        radius = 0.0
+
+        [[bar.swaybar.capsule_group]]
+        accordion = true
+        accordion_direction = "end"
+        border = "primary"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_variant"
+        id = "g5"
+        members = [ "ram", "temp", "cpu", "network_rx", "network_tx" ]
+        opacity = 1.0
+        padding = 7.0
+        radius = 0.0
+        widget_spacing = 8
+
+        [[bar.swaybar.capsule_group]]
+        accordion = true
+        accordion_direction = "start"
+        border = "primary"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_variant"
+        id = "g6"
+        members = [ "wallpaper", "theme_mode", "recorder", "bar", "file-search", "widget", "widget_2", "bar_2" ]
+        opacity = 1.0
+        padding = 7.0
+        radius = 0.0
+
+[control_center]
+sidebar = "full"
+sidebar_section = "full"
+width = 900
+
+    [control_center.calendar]
+    show_events_card = false
+
+[desktop_widgets]
+schema_version = 2
+widget_order = [
+    "desktop-widget-0000000000000008",
+    "desktop-widget-0000000000000006",
+    "desktop-widget-0000000000000005",
+    "desktop-widget-0000000000000001",
+    "desktop-widget-0000000000000003",
+    "desktop-widget-0000000000000007",
+    "desktop-widget-000000000000000d",
+    "desktop-widget-000000000000000e",
+    "desktop-widget-000000000000000f",
+    "desktop-widget-0000000000000010",
+    "desktop-widget-0000000000000011",
+    "desktop-widget-0000000000000012"
+]
+
+    [desktop_widgets.grid]
+    cell_size = 8
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000001]
+    box_height = 120.0
+    box_width = 296.0
+    cx = 168.0
+    cy = 168.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "clock"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
+        background_opacity = 1.0
+        background_radius = 0
+        color = "primary"
+        format = "{:%H:%M:%S}"
+
+    [desktop_widgets.widget.desktop-widget-0000000000000003]
+    box_height = 128.0
+    box_width = 288.0
+    cx = 168.0
+    cy = 320.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "media_player"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000003.settings]
+        album_art_background = true
+        album_art_blur = 8
+        background_opacity = 1.0
+        background_radius = 0
+        color = "secondary"
+
+    [desktop_widgets.widget.desktop-widget-0000000000000005]
+    box_height = 112.0
+    box_width = 296.0
+    cx = 176.0
+    cy = 180.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "label"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000005.settings]
+        background_color = "primary"
+        background_opacity = 1.0
+        background_radius = 0
+        opacity = 1.0
+        title = ""
+
+    [desktop_widgets.widget.desktop-widget-0000000000000006]
+    box_height = 120.0
+    box_width = 288.0
+    cx = 176.0
+    cy = 332.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "label"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000006.settings]
+        background_color = "surface_variant"
+        background_opacity = 1.0
+        background_radius = 0
+        opacity = 1.0
+        title = ""
+
+    [desktop_widgets.widget.desktop-widget-0000000000000007]
+    box_height = 104.0
+    box_width = 136.0
+    cx = 93.52386474609375
+    cy = 742.800048828125
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "button"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000007.settings]
+        background = true
+        color = "secondary"
+        command = "kitty -e ytm"
+        glyph = "music"
+        label = "Music"
+        variant = "default"
+
+    [desktop_widgets.widget.desktop-widget-0000000000000008]
+    box_height = 104.0
+    box_width = 136.0
+    cx = 100.0
+    cy = 748.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "label"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000008.settings]
+        background_color = "secondary"
+        background_opacity = 1.0
+        background_radius = 0
+        opacity = 1.0
+        title = ""
+
+    [desktop_widgets.widget.desktop-widget-000000000000000d]
+    box_height = 104.0
+    box_width = 136.0
+    cx = 100.0
+    cy = 868.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "label"
+
+        [desktop_widgets.widget.desktop-widget-000000000000000d.settings]
+        background_color = "error"
+        background_opacity = 1.0
+        background_radius = 0
+        opacity = 1.0
+        title = ""
+
+    [desktop_widgets.widget.desktop-widget-000000000000000e]
+    box_height = 104.0
+    box_width = 136.0
+    cx = 93.52386474609375
+    cy = 862.800048828125
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "button"
+
+        [desktop_widgets.widget.desktop-widget-000000000000000e.settings]
+        background = true
+        color = "error"
+        command = "kitty -e surge"
+        glyph = "download"
+        label = "Download"
+        variant = "default"
+
+    [desktop_widgets.widget.desktop-widget-000000000000000f]
+    box_height = 104.0
+    box_width = 136.0
+    cx = 252.19046020507812
+    cy = 868.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "label"
+
+        [desktop_widgets.widget.desktop-widget-000000000000000f.settings]
+        background_color = "#9047BA"
+        background_opacity = 1.0
+        background_radius = 0
+        opacity = 1.0
+        title = ""
+
+    [desktop_widgets.widget.desktop-widget-0000000000000010]
+    box_height = 104.0
+    box_width = 136.0
+    cx = 245.71429443359375
+    cy = 862.800048828125
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "button"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000010.settings]
+        background = true
+        color = "#9047BA"
+        glyph = "music"
+        label = "music"
+        variant = "default"
+
+    [desktop_widgets.widget.desktop-widget-0000000000000011]
+    box_height = 104.0
+    box_width = 136.0
+    cx = 252.19046020507812
+    cy = 748.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "label"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000011.settings]
+        background_color = "tertiary"
+        background_opacity = 1.0
+        background_radius = 0
+        opacity = 1.0
+        title = ""
+
+    [desktop_widgets.widget.desktop-widget-0000000000000012]
+    box_height = 104.0
+    box_width = 136.0
+    cx = 245.71429443359375
+    cy = 742.800048828125
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "button"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000012.settings]
+        background = true
+        color = "tertiary"
+        command = "kitty -e spf"
+        glyph = "folder"
+        label = "Files "
+        variant = "default"
+
+[dock]
+active_scale = 1.3000000193715096
+background_opacity = 0.99999997764825821
+border = "primary"
+border_width = 1.5
+concave_edge_corners = false
+cross_axis_padding = 4
+enabled = true
+inactive_opacity = 0.99999997764825821
+inactive_scale = 1.0
+item_spacing = 0
+launcher_icon = "square"
+launcher_position = "end"
+magnification_scale = 2.0
+margin_edge = 8
+pinned = [
+    "kitty",
+    "org.gnome.Nautilus",
+    "brave-origin",
+    "firefox",
+    "dev.noctalia.Noctalia",
+    "org.gnome.TextEditor",
+    "zapfast",
+    "obsidian",
+    "vesktop",
+    "ai.storyteller.gridcraft",
+    "ai.storyteller.deckcraft",
+    "ai.storyteller.wordcraft",
+    "ai.storyteller.pdfcraft"
+]
+radius = 0
+reserve_space = false
+shadow = false
+show_dots = true
+smart_auto_hide = true
+
+[hooks]
+battery_charging = "notify-send \"Battery\" \"Charging  󰂅\""
+battery_discharging = "notify-send \"Battery \" \"Discharging  󰂌\""
+colors_changed = "~/.local/bin/reload-gtk"
+wallpaper_changed = "~/.local/bin/reload-gtk"
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 600.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = true
+    timeout = 900.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    timeout = 660.0
+
+[location]
+auto_locate = true
+
+[lockscreen]
+blur_intensity = 0.69999998435378075
+transition_duration = 500
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@winit", "lockscreen-login-box@eDP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@winit"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 944.0
+    cy = 819.0
+    output = "winit"
+    placement_height = 1001.0
+    placement_width = 1888.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@winit".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[notification]
+background_opacity = 0.99999997764825821
+border_color = "primary"
+border_width = 1.5
+
+[osd]
+background_opacity = 0.99999997764825821
+border_color = "primary"
+border_width = 1.5
+hide_delay_ms = 1500
+
+[plugin_settings."dunarand/bookmarks"]
+panel_open_near_click = false
+panel_placement = "floating"
+panel_position = "center"
+
+[plugin_settings."nightwatch75/file-search"]
+panel_open_near_click = false
+panel_placement = "floating"
+panel_position = "center"
+
+[plugin_settings."thepunkoff/pomodoro"]
+long-break-duration = 20
+panel_placement = "floating"
+panel_position = "center"
+short-break-duration = 10
+use-bundled-alarm-sound = true
+work-duration = 50
+
+[plugin_settings."yuuto/calculator"]
+panel_open_near_click = false
+panel_placement = "floating"
+panel_position = "center"
+
+[plugins]
+enabled = [
+    "noctalia/kaomoji",
+    "noctalia/screen_recorder",
+    "noctalia/translator",
+    "ismay/sway-mode",
+    "thepunkoff/pomodoro",
+    "nightwatch75/file-search",
+    "yuuto/calculator",
+    "dunarand/bookmarks",
+    "alexander/screen-toolkit"
+]
+
+    [[plugins.source]]
+    kind = "git"
+    location = "https://github.com/noctalia-dev/official-plugins"
+    name = "official"
+
+    [[plugins.source]]
+    kind = "git"
+    location = "https://github.com/noctalia-dev/community-plugins"
+    name = "community"
+
+[shell]
+app_icon_color = "primary"
+avatar_path = "/home/sandevistan/Pictures/avatar/spikespiegel.jpg"
+clipboard_history_max_entries = 150
+corner_radius_scale = 0.0
+password_style = "random"
+polkit_agent = true
+screen_time_enabled = true
+
+    [shell.launcher]
+    app_grid = true
+
+    [shell.panel]
+    border_color = "primary"
+    border_width = 1.5
+    control_center_placement = "floating"
+    list_item_background = true
+    open_near_click_control_center = true
+    session_placement = "floating"
+    session_position = "center"
+    wallpaper_placement = "floating"
+    wallpaper_position = "center"
+
+    [shell.screenshot]
+    directory = "/home/sandevistan/Pictures/Screenshots"
+
+    [[shell.session.actions]]
+    action = "lock"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "1"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "logout"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "2"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "lock_and_suspend"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "3"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "reboot"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "4"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "shutdown"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "5"
+    variant = "destructive"
+
+    [[shell.session.actions]]
+    action = "command"
+    command = "systemctl reboot --firmware-setup"
+    countdown_seconds = 0.0
+    enabled = true
+    glyph = "file-settings"
+    label = "Firmware"
+    variant = "default"
+
+    [shell.shadow]
+    alpha = 0.099999997764825821
+
+    [shell.window_switcher]
+    mru = true
+
+[theme]
+builtin = "Rosé Pine"
+community_palette = "Espresso Cream"
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "soft"
+
+    [theme.templates]
+    builtin_ids = [ "alacritty", "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt", "starship", "sway" ]
+    community_ids = [
+        "opencode",
+        "pi-agent",
+        "ytm-player",
+        "pywalfox",
+        "discord",
+        "zapfast",
+        "obsidian",
+        "fastfetch",
+        "bat",
+        "superfile",
+        "surgedm"
+    ]
+
+[wallpaper]
+directory = "/home/sandevistan/Pictures/Wallpapers"
+transition_duration = 2000
+
+    [wallpaper.default]
+    path = "/home/sandevistan/Pictures/Wallpapers/Purple/138237636_p1.jpg"
+
+    [wallpaper.last]
+    path = "/home/sandevistan/Pictures/Wallpapers/Purple/138237636_p1.jpg"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/sandevistan/Pictures/Wallpapers/Purple/138237636_p1.jpg"
+
+[widget.audio_visualizer]
+bands = 3
+width = 30
+
+[widget.bar]
+text = ""
+type = "dunarand/bookmarks:bar"
+
+[widget.bar_2]
+type = "yuuto/calculator:bar"
+
+[widget.battery]
+display_mode = "graphic"
+
+[widget.brightness]
+show_label = false
+
+[widget.control-center]
+color = "primary"
+scale = 1.1000000000000001
+
+[widget.cpu]
+visualization = "none"
+
+[widget.file-search]
+type = "nightwatch75/file-search:file-search"
+
+[widget.launcher]
+enabled = false
+
+[widget.media]
+art_size = 20
+hide_artist = true
+hide_when_no_media = true
+rotate_album_art = true
+show_progress = true
+
+[widget.network]
+show_label = false
+
+[widget.network_rx]
+visualization = "none"
+
+[widget.network_tx]
+visualization = "none"
+
+[widget.privacy]
+hide_inactive = true
+
+[widget.ram]
+label_show_units = false
+visualization = "none"
+
+[widget.recorder]
+type = "noctalia/screen_recorder:recorder"
+
+[widget.session]
+color = "error"
+scale = 1.1000000000000001
+
+[widget.sway-mode]
+type = "ismay/sway-mode:sway-mode"
+
+[widget.taskbar]
+font_scale = 1.3500000000000001
+group_by_workspace = true
+scale = 1.1500000000000001
+workspace_label_placement = "inside"
+
+[widget.temp]
+visualization = "none"
+
+[widget.tray]
+capsule = true
+scale = 1.2
+
+[widget.volume]
+show_label = false
+
+[widget.widget]
+type = "alexander/screen-toolkit:widget"
+
+[widget.widget_2]
+type = "thepunkoff/pomodoro:widget"
+
+[widget.workspaces]
+active_pill_size = 2.3999999999999999
+hide_when_empty = true
+label_source = "name"
+scale = 1.1500000000000001
+show_labels = false

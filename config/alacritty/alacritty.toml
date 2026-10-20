@@ -1,0 +1,23 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/noctalia.toml"
+]
+
+# Shell (from kitty: shell fish; starship is already inited from fish config.fish)
+[terminal.shell]
+program = "/usr/bin/fish"
+
+# Font (from kitty: Maple Mono, size 11)
+[font]
+size = 11.0
+
+[font.normal]
+family = "Maple Mono"
+
+# Cursor (from kitty: beam; no trail in alacritty)
+[cursor]
+style = "Beam"
+
+# Padding (from kitty: window_margin_width 21.75, rounded to 22)
+[window]
+padding = { x = 22, y = 22 }
